@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.left{
+    width: 25vw;
+    padding: 10px;
+}
+.right{
+    width: 75vw;
+    /* padding: 10px; */
+    margin: 15px;
+    position: relative;
+}
+.home ul li{
+    width: 14px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.heading {
+    width: 100%;/*it will help to keep "your library"in one single line */
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.heading img{
+   width: 14px;
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 9px;
+    color: gray;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a{
+    color:gray;
+    text-decoration: none;
+    /* list-style: none; */
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(29, 28, 28);
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+}
+.header > *{/* '> *' this symbol is use to exces direct elements of header*/
+    padding-top: 20px;
+    
+}
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.hambarger{
+    display: none;
+}
+.close{
+    display: none;
+}
+.spotifyplaylists{
+    padding: 16px;
+}
+.cardcontainer{
+    display: flex;
+    /* justify-content: center; */
+    gap: 10px;
+    flex-wrap:wrap;
+    margin: 30px;
+    overflow-y: auto;
+    max-height: 60vh;
+    /* padding-bottom:80px ; */
+}
+.card{
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(51, 50, 50);
+    position: relative;/*important*/
+    transition: all .9s;/*important*/
+}
+.card > img{
+    padding-top: 10px;
+}
+.card:hover{
+    background-color: rgb(105,103,103);
+    cursor: pointer;
+    /* --a:1; */
+}
+.card>*{
+    padding-top: 10px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play {
+    width: 28px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 4px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;/*important*/
+    bottom: 102px;
+    right: 17px; 
+    /* opacity: 0; */
+ /* transition: all 1s ease-out; */
+}
+.buttons > *{
+    margin: 0px 12px;
+}
+.signupbtn{
+    background-color: rgb(29, 28, 28);
+    color: rgb(163, 162, 162);
+    border: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+.signupbtn:hover{
+    font-size: 17px;
+    color: white;
+}
+.loginbtn{
+    border-radius: 21px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12px;
+    background-color: white;
+    border:none;
+    width: 79px;
+    cursor: pointer;
+}
+.loginbtn:hover{
+    /*font-size: 17px;*/
+    font-weight: 800;
+}
+.playbar{
+    position:absolute;
+    /* justify-content: center; */
+    background-color: rgb(29, 28, 28);
+    border-radius:0px 0px 8px 8px;
+    bottom: 0px;
+    height: 80px;
+    width: 100%;
+}
+.songbuttons{
+   display:flex;
+   justify-content:center;
+   gap: 8px;
+   /* padding-top: 25px; */
+}
+
+.songslist ul{
+    padding: 0 12px;
+}
+.songslist ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0px;
+    background-color: rgb(29, 28, 28);
+    /* border: 1px solid white; */
+    margin: 12px 0px;
+    padding: 13px;
+    border-radius: 5px;
+    /* justify-content: space-between; */
+}
+.songslist{
+    height: 540px;
+    overflow: auto;
+    margin-bottom: 44px;
+}
+.songslist .info{
+    font-size: 13px;
+    width: 344px;
+}
+.playnow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.playnow span{
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+}
+.parentseekbar{
+    display: flex;
+    justify-content: center;
+}
+.seekbar{
+    height: 6px;
+    width:40%;
+    /* border: 2px solid rgb(37, 6, 241); */
+    /* padding:0px; */
+    /* right: 5px; */
+    margin-left:9px;
+    margin-bottom: 10px;
+    bottom: 0px;
+    position:absolute;
+    background: rgb(99, 96, 96);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.circle{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 8px;
+    bottom:5px;
+    position: relative;
+    left:0%;
+    transition:left 0.5s ;
+    /* cursor: pointer; */
+}
+.songbuttons{
+    display: flex;
+    justify-content: center;
+}
+.songbuttons img{
+    cursor: pointer;
+}
+.aboveseekbar{
+    display: flex;   
+    justify-content:space-between;
+    padding-top: 25px;
+    position:static;
+    line-height: 0.2;
+    font-weight: 700;
+}
+.songinfo{
+    color: white;
+    padding: 0 14px;
+    /* width: 25%; */
+    height: 4px;
+    /* justify-content: left; */
+}
+.songtime{
+    color:white;
+    padding: 0 14px;
+    /* width: 25%; */
+    display: flex;
+    justify-content: end;
+}
+.volumebar{
+    display: flex;
+    /* width: 3vw; */
+}
+.imgvol{
+    margin-top:7px;;
+}
+/* .range{
+    margin-top:9px;
+} */
+#v{
+    margin-top:9px;
+    width:79px;
+}
+@media (max-width:1400px) {
+    .left{
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+        width: 325px;
+        background-color: black;
+    }
+    .close{
+        position: absolute;
+        right: 30px;
+        display: block;
+        cursor: pointer;
+    }
+    .right{
+        width: 100%;
+    }
+    .seekbar{
+        width: 97%;
+    }
+    .hambarger{
+       display:block;
+       cursor:pointer;
+    }
+    /* .card{
+        width: 90vw;
+    } */
+    .cardcontainer{
+        justify-content: center;
+    }
+    /* .signupbtn:hover{
+        background-color:azure;
+    }
+    .loginbtn:hover{
+        font-weight: 800;
+    } */
+    .songinfo{
+        size: 13px;
+        line-height: 13px;
+    }
+
+
+}

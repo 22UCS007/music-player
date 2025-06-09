@@ -1,0 +1,20 @@
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff416c"/>
+      <stop offset="100%" stop-color="#8e2de2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Gradient Circle -->
+  <circle cx="50" cy="50" r="40" fill="url(#grad)" />
+
+  <!-- Double Musical Note symbol "♫" -->
+  <text x="30" y="63" font-family="Arial, sans-serif" font-size="38" fill="white" font-weight="bold">♫</text>
+
+  <!-- Music -->
+  <text x="110" y="45" font-family="Arial, sans-serif" font-size="22" fill="white" font-weight="bold">Music</text>
+
+  <!-- Player -->
+  <text x="110" y="70" font-family="Arial, sans-serif" font-size="22" fill="white" font-weight="bold">Player</text>
+</svg>

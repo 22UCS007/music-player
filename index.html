@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+             <div class="home bg-gray rounded m-0 p-0">
+            <div class="close">
+            <img class="invert" src="close.svg" alt="">
+            </div>
+            <div class="logo"><img width="250px" height="110px"  src="logo.svg" alt=""></div>
+        </div>
+
+            <div class="library  bg-gray">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songslist">
+                    <ul>
+
+                    </ul>
+                </div>
+                
+            </div>
+
+
+        </div>
+        <div class="right bg-gray rounded">
+            <div class="header">
+                <div class="nav">
+                    <div class="hambarger"><img class="invert" src="hamburger.svg" alt=""></div>
+                    <!-- ✅ Search Bar Starts Here -->
+                    <div class="search-bar">
+                        <img src="search.svg" alt="Search" class="invert" width="20">
+                        <button id="searchBtn"></button>
+                        <input type="text" id="searchInput" placeholder="Search songs, artists, albums...">
+
+                    </div>
+                    <!-- ✅ Search Bar Ends Here -->
+                    <div class="buttons">
+                        <button class="albums" id="albums">Albums</button>
+                        <button class="artists" id="artists">Artists</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cardcontainer" id="cardcontainer">
+                <h1>Popular Albums</h1>
+                <ul>
+
+                </ul>
+
+            </div>
+
+            <div class="cardcontainer2" id="cardcontainer2">
+                <h1>Popular Artists</h1>
+                <ul>
+
+                </ul>
+
+            </div>
+            <!-- </div> -->
+            <div class="playbar">
+                <div class="parentseekbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="aboveseekbar">
+                    <div class="songinfo">
+                     
+                    </div>
+                    <div class="songbuttons">
+                        <img width="30px" id="previous" src="prevsongs.svg" alt="">
+                        <img width="30px" id="play" class="invert" src="play.svg" alt="">
+                        <img width="30px" id="next" src="nextsong.svg" alt="">
+                    </div>
+                    <div class="volume1">
+                        <div class="songtime">
+
+                        </div>
+                        <div class="volumebar">
+                            <div class="imgvol">
+                                <img class="invert" src="volume.svg" alt="">
+                            </div>
+                            <div class="range">
+                                <input type="range" name="volume" id="v">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
+<!-- .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    width: 380px; /* ⬅️ Increased width */
+    background-color: #222;
+    color: white;
+}
+ -->
